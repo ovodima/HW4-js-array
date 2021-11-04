@@ -41,11 +41,33 @@ let users2 = [
 ];
 // console.log(users2)
 
-const names = (array, name) => {
-    let result = []
-    for(let i = 0 ; i < array.length ; i++) {
-        result.push(array[i][name])
-    }
-    return result
+// const names = (array, name) => {
+//     let result = []
+//     for(let i = 0 ; i < array.length ; i++) {
+//         result.push(array[i][name])
+//     }
+//     return result
+// }
+// console.log( names(users2, 'name') );
+
+let names = users2.map(item => {
+    return item.name
+}).join(',').split(',')
+console.log(names)
+
+console.log('Task 10')
+
+const filterRangeInPlace = (arr, a, b) => {
+  for(let i = 0; i < arr.length; i++) {
+      let res = arr[i]
+
+      if(res < a || res > b) {
+          arr.splice(i, 1)
+          i--
+      }
+  }
 }
-console.log( names(users2, 'name') );
+
+let arr3 = [5, 3, 8, 1]
+filterRangeInPlace(arr3, 1, 4)
+console.log(arr3)
