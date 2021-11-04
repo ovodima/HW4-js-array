@@ -29,7 +29,23 @@ let users =
 
 ]
 
-const fltr = users.filter(item => item.age > 20)
+const fltr = users.filter(item => item.age < 20)
 console.log(fltr)
 
 console.log('Task 9')
+
+let users2 = [
+    {id: 1, name: "Vic", age: 21}, 
+    {id: 2, name: "Petya", age: 30}, 
+    {id: 3, name: "Jon", age: 5},
+];
+// console.log(users2)
+
+const names = (array, name) => {
+    let result = []
+    for(let i = 0 ; i < array.length ; i++) {
+        result.push(array[i][name])
+    }
+    return result
+}
+console.log( names(users2, 'name') );
