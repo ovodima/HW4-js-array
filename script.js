@@ -5,9 +5,9 @@ const ask = (question, yes, no) => {
         else no()
 }
 
-ask('Вы согласны?', function () {
+ask('Вы согласны?', () => {
     console.log('Вы согласились')
-}, function () {
+},  () => {
     console.log('Вы отменили выполнение.')
 })
 
