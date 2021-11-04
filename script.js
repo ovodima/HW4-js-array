@@ -71,3 +71,18 @@ const filterRangeInPlace = (arr, a, b) => {
 let arr3 = [5, 3, 8, 1]
 filterRangeInPlace(arr3, 1, 4)
 console.log(arr3)
+
+console.log('Task 11')
+
+const arrStr = (str) => {
+
+    let mass = []
+    for(let i = 0; i < str.length; i++) {
+        
+        mass.push(str[i])
+    }
+    return mass
+}
+
+console.log(arrStr('hello'))
+
