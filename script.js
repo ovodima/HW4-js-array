@@ -90,3 +90,19 @@ const arrStr = (string, seprarator) => {
 
 
 arrStr('hello Dima', "")
+
+console.log('Task 12')
+const  slArray = (arr, startIndex, endIndex) => {
+    return arr.splice(startIndex , endIndex)
+}
+
+let arr4 = [5, 3, 8, 1]
+let range = slArray(arr4, 1, 4)
+console.log(range)
+
+console.log('task 13')
+const reduce = (...param) => {
+    return param.reduce((total, number) => total + number)
+}
+
+console.log(reduce(2,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,11,1,1,1,1,1))
