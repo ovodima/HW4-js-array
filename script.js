@@ -1,14 +1,14 @@
 console.log('Task 5')
 
-// const ask = (question, yes, no) => {
-//     confirm(question) ? yes() : no()
-// }
+const ask = (question, yes, no) => {
+    confirm(question) ? yes() : no()
+}
 
-// ask('Вы согласны?', () => {
-//     console.log('Вы согласились')
-// },  () => {
-//     console.log('Вы отменили выполнение.')
-// })
+ask('Вы согласны?', () => {
+    console.log('Вы согласились')
+},  () => {
+    console.log('Вы отменили выполнение.')
+})
 
 console.log('Task 6')
 
