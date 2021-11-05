@@ -74,15 +74,19 @@ console.log(arr3)
 
 console.log('Task 11')
 
-const arrStr = (str) => {
-
-    let mass = []
-    for(let i = 0; i < str.length; i++) {
+// const arrStr = (str) => {
+//     let mass = []
+//     for(let i = 0; i < str.length; i++) {
         
-        mass.push(str[i])
-    }
-    return mass
+//         mass.push(str[i])
+//     }
+//     return mass
+  
+// }
+
+const arrStr = (string, seprarator) => {
+    console.log(string.split(seprarator))
 }
 
-console.log(arrStr('hello'))
 
+arrStr('hello Dima', "")
